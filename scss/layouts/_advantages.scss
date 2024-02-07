@@ -1,0 +1,28 @@
+.advantages {
+    padding-bottom: 96px;
+    background: url(../images/about-bg.png);
+    background-position: 0 -200px;
+}
+
+.advantages__list {
+    display: flex;
+    gap: 56px;
+    line-height: 1.33;
+}
+
+.advantages__item {
+    padding: 24px 32px;
+    border-radius: 32px;
+    background-color: var(--color-primary-white);
+}
+
+.advantages__icon {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    fill: var(--color-primary-blue);
+}
+
+.advantages__text {
+    text-align: center;
+}

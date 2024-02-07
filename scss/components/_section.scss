@@ -1,0 +1,25 @@
+.section-border-delete {
+    border: 1px solid red;
+}
+
+.section__title {
+    margin-bottom: 48px;
+    font-family: 'Play', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.section__title--left {
+    text-align: left;
+}
+
+.section__title--color {
+    color: var(--color-primary-blue);
+}
+
+.section__title--capitalize {
+    text-transform: capitalize;
+}

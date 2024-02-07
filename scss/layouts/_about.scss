@@ -1,0 +1,99 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        scale: 1;
+    }
+
+    50% {
+        scale: 2;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        scale: 1;
+    }
+}
+
+.about {
+    /* position: relative; */
+    padding-bottom: 176px;
+    background: url(../images/about-bg.png);
+    background-position: 0 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about__box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.about__box::after {
+    position: absolute;
+    top: 270px;
+    right: 20px;
+    content: url(../images/about-star-3.png);
+    z-index: 1;
+
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.about__text {
+    font-size: 22px;
+    line-height: 1.73;
+    letter-spacing: 0em;
+}
+
+.about__text--margin {
+    margin-bottom: 40px;
+}
+
+.about__text--font {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.about__content {
+    max-width: 700px;
+    padding-top: 40px;
+}
+
+.about__image {
+    /* position: relative; */
+    max-width: 500px;
+}
+
+.about__image-box {
+    position: relative;
+}
+
+.about__image-box::before {
+    position: absolute;
+    top: 50px;
+    right: -20px;
+    content: url(../images/about-star-2.png);
+    z-index: 1;
+
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.about__image-box::after {
+    position: absolute;
+    top: 350px;
+    right: 300px;
+    content: url(../images/about-star-1.png);
+    z-index: 1;
+
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

@@ -1,0 +1,138 @@
+.footer {
+    position: relative;
+    padding: 56px 0;
+    background: url(../images/footer-bg.png), var(--color-primary-darkblue);
+}
+
+.footer::after {
+    content: url(../images/footer-decorate.png);
+    width: 247px;
+    height: 152px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.footer__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer__menu-box {
+    display: flex;
+    flex-basis: calc(100% / 2);
+    gap: 20px;
+}
+
+.footer__logo {
+    font-family: Play;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0em;
+    color: var(--color-primary-blue);
+    text-decoration: none;
+    flex-basis: calc(100% / 2);
+}
+
+.footer__nav-list {
+    font-size: 16px;
+}
+
+.footer__nav-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.footer__nav-link {
+    text-decoration: none;
+    color: var(--color-primary-white);
+
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0;
+}
+
+.footer__nav-link:hover {
+    color: var(--color-primary-blue);
+}
+
+.footer__address {
+    display: flex;
+    flex-basis: calc(100% / 2);
+    gap: 20px;
+}
+
+.footer__address-box {
+    flex-basis: calc(100% / 2);
+}
+
+.footer__address-list {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.footer__address-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.footer__address-link {
+    text-decoration: none;
+    font-style: normal;
+    color: var(--color-primary-white);
+
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0;
+}
+
+.footer__address-link:hover {
+    color: var(--color-primary-blue);
+}
+
+.footer__contacts-list {
+    display: flex;
+}
+
+.footer__contacts-icon {
+    fill: var(--color-primary-white);
+
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0;
+}
+
+.footer__contacts-icon:hover {
+    fill: var(--color-primary-blue);
+}
+
+.footer__address-policy {
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: var(--color-primary-white);
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: 0em;
+
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0;
+}
+
+.footer__address-policy:hover {
+    color: var(--color-primary-blue);
+}
+
+.footer__address-copy {
+    font-size: 13px;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0em;
+    color: var(--color-secondary-lightgrey);
+}
