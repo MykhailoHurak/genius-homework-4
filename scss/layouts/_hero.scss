@@ -1,39 +1,67 @@
 .hero {
-    padding-top: 130px;
-    padding-bottom: 90px;
+    padding-top: 70px;
+    padding-bottom: 56px;
     background: url(../images/hero-bg.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: cover;
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 130px;
+        padding-bottom: 90px;
+    }
 }
 
 .hero__before-title {
-    margin-bottom: 16px;
-    line-height: 1.17;
-    letter-spacing: 0em;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 1.17;
+        text-align: left;
+    }
 }
 
 .hero__title {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     font-family: Play;
-    font-size: 140px;
     font-weight: 700;
-    line-height: 0.81;
-    letter-spacing: 0em;
+    font-size: 54px;
+    line-height: 0.85;
+    text-align: center;
     color: var(--color-primary-blue);
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+        font-size: 140px;
+        font-weight: 700;
+        line-height: 0.81;
+        max-width: 800px;
+        text-align: left;
+    }
 }
 
 .hero__box-btn {
-    max-width: 230px;
+    max-width: 194px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1280px) {
+        max-width: 230px;
+        margin: 0 auto 0 0;
+    }
 }
 
 .hero__button {
-    margin-bottom: 14px;
-    padding: 16px 32px 16px 32px;
-    font-size: 18px;
+    margin-bottom: 8px;
+    padding: 12px 24px 12px 24px;
+    font-size: 16px;
     font-weight: 600;
-    border: 2px solid var(--color-primary-blue);
-    border-radius: 32px;
+    border: 1px solid var(--color-primary-blue);
+    border-radius: 24px;
     background-color: var(--color-primary-blue);
     color: var(--color-primary-white);
     cursor: pointer;
@@ -42,6 +70,14 @@
     transition-duration: 0.2s;
     transition-timing-function: linear;
     transition-delay: 0;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 14px;
+        padding: 16px 32px 16px 32px;
+        font-size: 18px;
+        border: 2px solid var(--color-primary-blue);
+        border-radius: 32px;
+    }
 }
 
 .hero__button:hover {
@@ -51,7 +87,11 @@
 
 .hero__after-button {
     text-align: center;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.5;
     color: var(--color-secondary-darkgrey);
+
+    @media screen and (min-width: 1280px) {
+        font-size: 12px;
+    }
 }

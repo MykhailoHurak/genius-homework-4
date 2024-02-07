@@ -1,18 +1,33 @@
 .advantages {
-    padding-bottom: 96px;
+    padding-bottom: 40px;
     background: url(../images/about-bg.png);
     background-position: 0 -200px;
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 96px;
+    }
 }
 
 .advantages__list {
     display: flex;
-    gap: 56px;
-    line-height: 1.33;
+    flex-direction: column;
+    gap: 12px;
+
+    @media screen and (min-width: 480px) {
+        gap: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        flex-direction: row;
+        gap: 56px;
+        line-height: 1.33;
+    }
 }
 
 .advantages__item {
     padding: 24px 32px;
     border-radius: 32px;
+    font-size: 18px;
     background-color: var(--color-primary-white);
 }
 

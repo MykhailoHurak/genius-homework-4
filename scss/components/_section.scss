@@ -3,13 +3,20 @@
 }
 
 .section__title {
-    margin-bottom: 48px;
+    margin-bottom: 24px;
     font-family: 'Play', sans-serif;
-    font-size: 64px;
     font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: 0em;
+    font-size: 32px;
+    line-height: 1.17;
     text-align: center;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 48px;
+        font-size: 64px;
+        line-height: 1.15;
+        letter-spacing: 0em;
+        text-align: center;
+    }
 }
 
 .section__title--left {

@@ -4,32 +4,52 @@
 
 .contacts__box {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     gap: 32px;
+
+    @media screen and (min-width: 1280px) {
+        flex-direction: row;
+    }
 }
 
 .contacts__map {
     display: block;
-    border-radius: 32px;
-    width: calc((100% - 32px) / 2);
-    max-height: 500px;
+    margin: 0 -20px;
+    height: 232px;
+
+    @media screen and (min-width: 1280px) {
+        border-radius: 32px;
+        width: calc((100% - 32px) / 2);
+    }
 }
 
 .contacts__form {
-    padding: 48px 56px;
+    padding: 42px 24px;
     border-radius: 32px;
     background-color: var(--color-secondary-darkblue);
-    width: calc((100% - 32px) / 2);
+
+    @media screen and (min-width: 1280px) {
+        padding: 48px 56px;
+        width: calc((100% - 32px) / 2);
+    }
 }
 
 .contacts__form-title {
-    margin-bottom: 32px;
-    font-size: 22px;
+    margin-bottom: 24px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 1.18;
-    letter-spacing: 0em;
+    line-height: 1.17;
     text-align: center;
     color: var(--color-primary-white);
+
+    @media screen and (min-width: 480px) {
+        font-size: 22px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 32px;
+    }
 }
 
 .contacts__form-title--color {
@@ -44,13 +64,8 @@
     margin-bottom: 16px;
 }
 
-/* .contacts__form-field {
-    display: block;
-    max-width: 390px;
-} */
-
 .contacts__form-input {
-    width: 310px;
+    width: 240px;
     border-radius: 32px;
     border: 2px solid var(--color-secondary-lightgrey);
     padding: 16px 24px;
@@ -60,6 +75,10 @@
     transition-duration: 0.2s;
     transition-timing-function: linear;
     transition-delay: 0;
+
+    @media screen and (min-width: 1280px) {
+        width: 310px;
+    }
 }
 
 .contacts__form-input:focus {
@@ -75,21 +94,28 @@
 .contacts__form-button {
     display: block;
     margin: 0 auto 8px;
-    padding: 16px 32px 16px 32px;
+    padding: 12px 24px;
     border-radius: 32px;
     border: 2px solid var(--color-primary-blue);
     background-color: var(--color-primary-blue);
     color: var(--color-primary-white);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1.17;
-    letter-spacing: 0em;
     cursor: pointer;
 
     transition-property: all;
     transition-duration: 0.2s;
     transition-timing-function: linear;
     transition-delay: 0;
+
+    @media screen and (min-width: 480px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 16px 32px;
+    }
 }
 
 .contacts__form-button:hover {
@@ -100,7 +126,6 @@
 .contacts__form-text {
     font-size: 12px;
     line-height: 1.5;
-    letter-spacing: 0em;
     text-align: center;
     color: var(--color-secondary-lightgrey);
 }

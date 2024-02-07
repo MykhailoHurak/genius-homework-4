@@ -3,8 +3,20 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 32px 0;
+    padding: 12px 0;
     background: rgba(255, 255, 255, 0.25);
+
+    @media screen and (min-width: 480px) {
+        padding: 16px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 24px 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 32px 0;
+    }
 }
 
 .header__box {
@@ -20,20 +32,39 @@
 
 .header__logo {
     font-family: Play;
-    font-size: 22px;
     font-weight: 700;
+    font-size: 14px;
     line-height: 1;
-    letter-spacing: 0em;
     color: var(--color-primary-blue);
     text-decoration: none;
+
+    @media screen and (min-width: 480px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 22px;
+    }
 }
 
 .header__nav-list {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    margin: 0 auto;
-    gap: 56px;
+    display: none;
+
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    //     align-items: center;
+    //     font-size: 18px;
+    //     margin: 0 auto;
+    //     gap: 56px;
+    // }
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin: 0 auto;
+        gap: 56px;
+    }
 }
 
 .header__nav-link {
@@ -51,8 +82,15 @@
 }
 
 .header__contacts-list {
-    display: flex;
-    gap: 32px;
+    display: none;
+    
+    // @media screen and (min-width: 768px) {
+    // }
+    
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        gap: 32px;
+    }
 }
 
 .header__contacts-icon {
@@ -66,4 +104,10 @@
 
 .header__contacts-icon:hover {
     fill: var(--color-primary-blue)
+}
+
+.header__burger-btn {
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
 }
