@@ -67,7 +67,81 @@
               </a>
             </li>
           </ul>
-          <button class="header__burger-btn" type="button">=</button>
+          <button class="header__burger-btn mob-menu-btn-open" type="button">
+            <svg class="header__icon-burger-menu" width="24" height="24">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
+          <div class="mob-menu">
+            <div class="mob-menu__header">
+              <a class="mob-menu__logo" href="/">Beauty<br />Zone</a>
+              <button
+                class="mob-menu__btn-close mob-menu-btn-open"
+                type="button"
+              >
+                <svg
+                  class="mob-menu__icon-close mob-menu-btn-close"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <ul class="mob-menu__nav-list">
+                <li class="mob-menu__nav-item">
+                  <a class="mob-menu__nav-link" href="#about">Про нас</a>
+                </li>
+                <li class="mob-menu__nav-item">
+                  <a class="mob-menu__nav-link" href="#advantages">Чому ми</a>
+                </li>
+                <li class="mob-menu__nav-item">
+                  <a class="mob-menu__nav-link" href="#procedures">
+                    Наші процедури
+                  </a>
+                </li>
+                <li class="mob-menu__nav-item">
+                  <a class="mob-menu__nav-link" href="#contacts">Контакти</a>
+                </li>
+              </ul>
+              <ul class="mob-menu__contacts-list">
+                <li class="mob-menu__contacts-item">
+                  <a
+                    class="mob-menu__contacts-link"
+                    href="tel:+380960000007"
+                    target="_blank"
+                  >
+                    <svg class="mob-menu__contacts-icon" width="32" height="32">
+                      <use href="./images/icons.svg#icon-telephone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-menu__contacts-item">
+                  <a
+                    class="mob-menu__contacts-link"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                  >
+                    <svg class="mob-menu__contacts-icon" width="32" height="32">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-menu__contacts-item">
+                  <a
+                    class="mob-menu__contacts-link"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                  >
+                    <svg class="mob-menu__contacts-icon" width="32" height="32">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -218,23 +292,19 @@
           >
           </iframe>
           <div class="contacts__form">
-            <form name="contacts__form" autocomplete="off">
-              <p class="contacts__form-title">
+            <form name="form" autocomplete="off">
+              <p class="form-title">
                 Запишіться
-                <span class="contacts__form-title--color"
-                  >безкоштовно<br
-                /></span>
+                <span class="form-title--color">безкоштовно<br /></span>
                 та отримайте подарунок
               </p>
-              <div class="contacts__form-box">
-                <div class="contacts__form-field">
-                  <label
-                    class="contacts__form-label visually-hidden"
-                    for="user-name"
+              <div class="form-box">
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name"
                     >Name</label
                   >
                   <input
-                    class="contacts__form-input"
+                    class="form-input"
                     type="text"
                     name="user-name"
                     id="user-name"
@@ -243,14 +313,12 @@
                     pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
                   />
                 </div>
-                <div class="contacts__form-field">
-                  <label
-                    class="contacts__form-label visually-hidden"
-                    for="user-tel"
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-tel"
                     >Phone number</label
                   >
                   <input
-                    class="contacts__form-input"
+                    class="form-input"
                     type="tel"
                     name="user-tel"
                     id="user-tel"
@@ -259,14 +327,12 @@
                     pattern="^\+?3?8?(0\d{9})$"
                   />
                 </div>
-                <div class="contacts__form-field">
-                  <label
-                    class="contacts__form-label visually-hidden"
-                    for="user-email"
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email"
                     >E-mail</label
                   >
                   <input
-                    class="contacts__form-input"
+                    class="form-input"
                     type="email"
                     name="user-email"
                     id="user-email"
@@ -275,14 +341,12 @@
                   />
                 </div>
               </div>
-              <button class="contacts__form-button" type="submit">
+              <button class="form-button" type="submit">
                 Записатись безкоштовно
               </button>
-              <p class="contacts__form-text">
+              <p class="form-text">
                 Натискаючи на кнопку я погоджуюсь<br />
-                <a class="contacts__form-policy" href="#"
-                  >з політикою конфіденційності</a
-                >
+                <a class="form-policy" href="#">з політикою конфіденційності</a>
               </p>
             </form>
           </div>
@@ -401,22 +465,20 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="modal__title">Замовити<br />дзвінок</h2>
-        <form name="modal__form" autocomplete="off">
-          <p class="contacts__form-title">
+        <h2 class="section__title">Замовити<br />дзвінок</h2>
+        <form name="form" autocomplete="off">
+          <p class="form-title">
             Запишіться
-            <span class="contacts__form-title--color">безкоштовно<br /></span>
+            <span class="form-title--color">безкоштовно<br /></span>
             та отримайте подарунок
           </p>
-          <div class="contacts__form-box">
-            <div class="contacts__form-field">
-              <label
-                class="contacts__form-label visually-hidden"
-                for="user-name"
+          <div class="form-box">
+            <div class="form-field">
+              <label class="form-label visually-hidden" for="user-name"
                 >Name</label
               >
               <input
-                class="contacts__form-input"
+                class="form-input"
                 type="text"
                 name="user-name"
                 id="user-name"
@@ -425,12 +487,12 @@
                 pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
               />
             </div>
-            <div class="contacts__form-field">
-              <label class="contacts__form-label visually-hidden" for="user-tel"
+            <div class="form-field">
+              <label class="form-label visually-hidden" for="user-tel"
                 >Phone number</label
               >
               <input
-                class="contacts__form-input"
+                class="form-input"
                 type="tel"
                 name="user-tel"
                 id="user-tel"
@@ -439,14 +501,12 @@
                 pattern="^\+?3?8?(0\d{9})$"
               />
             </div>
-            <div class="contacts__form-field">
-              <label
-                class="contacts__form-label visually-hidden"
-                for="user-email"
+            <div class="form-field">
+              <label class="form-label visually-hidden" for="user-email"
                 >E-mail</label
               >
               <input
-                class="contacts__form-input"
+                class="form-input"
                 type="email"
                 name="user-email"
                 id="user-email"
@@ -455,19 +515,18 @@
               />
             </div>
           </div>
-          <button class="contacts__form-button" type="submit">
+          <button class="form-button" type="submit">
             Записатись безкоштовно
           </button>
-          <p class="contacts__form-text">
+          <p class="form-text">
             Натискаючи на кнопку я погоджуюсь<br />
-            <a class="contacts__form-policy" href="#"
-              >з політикою конфіденційності</a
-            >
+            <a class="form-policy" href="#">з політикою конфіденційності</a>
           </p>
         </form>
       </div>
     </div>
 
+    <script src="./js/mob-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
