@@ -33,13 +33,13 @@
 .header__logo {
     font-family: Play;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1;
     color: var(--color-primary-blue);
     text-decoration: none;
 
-    @media screen and (min-width: 480px) {
-        font-size: 16px;
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -98,13 +98,18 @@
 .header__burger-btn {
     padding: 0;
     margin: 0;
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     text-align: center;
     border: none;
     cursor: pointer;
     background-color: transparent;
     fill: var(--color-primary-white);
+
+    @media screen and (min-width: 768px) {
+        width: 36px;
+        height: 36px;
+    }
 
     @media screen and (min-width: 1280px) {
         display: none;
@@ -112,7 +117,12 @@
 }
 
 .header__icon-burger-menu {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     fill: var(--color-primary-white);
+
+    @media screen and (min-width: 768px) {
+        width: 36px;
+        height: 36px;
+    }
 }
